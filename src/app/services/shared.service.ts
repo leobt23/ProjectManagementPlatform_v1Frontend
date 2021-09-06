@@ -12,40 +12,46 @@ readonly APIUrl = "http://localhost:8888/api";
 
   // Projects
   getProjList():Observable<any[]>{
-    return this.http.get<any>(this.APIUrl+'/Project');
+    return this.http.get<any>(this.APIUrl+'/projects');
   }
 
   addProject(val:any){
-    return this.http.post(this.APIUrl+'/Project', val);
+    return this.http.post(this.APIUrl+'/Projects', val);
   }
 
   updateProject(val:any){
-    return this.http.put(this.APIUrl+'/Project', val);
+    return this.http.put(this.APIUrl+'/Projects', val);
   }
 
   deleteProject(val:any){
-    return this.http.delete(this.APIUrl+'/Project'+val);
+    return this.http.delete(this.APIUrl+'/Projects/'+val);
   }
 
 // Assignments 
   getAssiList():Observable<any[]>{
-    return this.http.get<any>(this.APIUrl+'/Assignment');
+    return this.http.get<any>(this.APIUrl+'/Assignments');
   }
 
   addAssignment(val:any){
-    return this.http.post(this.APIUrl+'/Assignment', val);
+    return this.http.post(this.APIUrl+'/Assignments', val);
   }
 
   updateAssignment(val:any){
-    return this.http.put(this.APIUrl+'/Assignment', val);
+    return this.http.put(this.APIUrl+'/Assignments', val);
   }
 
   deleteAssignment(val:any){
-    return this.http.delete(this.APIUrl+'/Assignment'+val);
+    return this.http.delete(this.APIUrl+'/Assignments/'+val);
   }
 
 
   getAllProjectNames():Observable<any[]>{
-    return this.http.get<any[]>(this.APIUrl+'/Assignment/');
+    return this.http.get<any[]>(this.APIUrl+'/Assignments');
+  }
+
+  //Login
+  doLogin(val:any){
+    return this.http.post(this.APIUrl+'/Account', val);
   }
 }
+

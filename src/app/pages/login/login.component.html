@@ -1,0 +1,19 @@
+<div class="form-froup row" style="margin-top: 20px;">
+    <label class="col-sm-4"> </label>
+    <label class="col-sm-1 col-form-label">Username:</label>
+    <div class="col-sm-3">
+        <input type="text" class="form-control" [(ngModel)]="Username"> 
+    </div>
+    <label class="col-sm-4"> </label>
+
+    <label class="col-sm-4"> </label>
+    <label class="col-sm-1 col-form-label">Password:</label>
+    <div class="col-sm-3">
+        <input type="password" class="form-control" [(ngModel)]="Password"> 
+    </div>
+    <label class="col-sm-4"> </label>
+</div>
+<label class="col-sm-5"> </label>
+<button  style=" margin-top: 20px; margin-left: 10px; " (click)="doLogin()" class="btn btn-primary">
+    Login
+</button>

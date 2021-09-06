@@ -1,0 +1,20 @@
+<div class="form-froup row">
+
+    <label class="col-sm-4 col-form-label">Assignment Name:</label>
+    <div class="col-sm-8">
+        <input type="text" class="form-control" [(ngModel)]="assignmentName"
+        placeholder="Enter assignment name">
+    </div>
+    <label class="col-sm-4 col-form-label">Project Id:</label>
+    <div class="col-sm-8">
+        <input type="number" class="form-control" [(ngModel)]="projectId"
+        placeholder="Enter project id">
+    </div>
+</div>
+
+<button  style=" margin: 20px;" (click) = "addAssignment()" *ngIf="assignmentObject.id==0" class="btn btn-primary">
+    Add
+</button>
+<button style="float: center; margin: 20px;" (click) = "updateAssignment()" *ngIf="assignmentObject.id!=0" class="btn btn-primary">
+    Update
+</button>
