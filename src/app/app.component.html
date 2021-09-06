@@ -1,1 +1,27 @@
-<h2>Hello world</h2>
+<div class="container">
+
+    <h3 id="titleWebsite" class="d-flex justify-content-center"> Project Management Platform</h3>
+    
+    <nav id="navbarMenu" class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+        <a class="navbar-brand" href="#">PMP-LIS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="../assets/img/menu.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          </a>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" >
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="project">Projects</a>
+            <a class="nav-item nav-link" href="assignment">Assignments</a>
+            @if Use<a class="nav-item nav-link " href="Account/login">Login</a>
+          </div>
+        </div>
+      </nav>
+
+  <router-outlet></router-outlet>
+
+
+</div>
